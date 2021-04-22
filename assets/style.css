@@ -1,4 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;500;700&display=swap');
+*{
+    font-family: 'Noto Sans JP', sans-serif;
+}
+body{
+    background-color: rgb(3, 176, 245);
+}
+
 #titulo{
+    color: white;
     text-align: center;
     font-size: 40px;
 }
@@ -9,16 +18,22 @@
     font-size: 20px;
 }
 section{
-    border: 2px solid black;
+    border: 2px solid white;
     margin-bottom: 10px;
     padding-left: 10px;
     padding-bottom: 5px;
-    background: tomato;
+    background: rgb(0, 0, 0);
     color: white;
+    transition: .3s ease;
 }
 
 #first div{
     margin-bottom: 20px;
+}
+
+section:hover{
+    border: 5px solid tomato;
+    transition: .3s ease;
 }
 
 #second div{
@@ -35,4 +50,27 @@ section{
 
 #fifth div{
     margin-bottom: 10px; 
+}
+
+footer{
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 25px;
+}
+
+footer p{
+    color: white;
+    font-size: 15px;
+}
+
+footer p strong a{
+    text-decoration: none;
+    color: inherit;
+    transition: .7s ease;
+}
+
+footer p strong a:hover{
+    color: inherit;
+    font-size: 2rem;
+    transition: .7s ease;
 }
