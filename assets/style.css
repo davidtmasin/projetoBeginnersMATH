@@ -1,0 +1,13 @@
+section{
+    border: 2px solid black;
+    margin-bottom: 10px;
+    padding-left: 10px;
+}
+
+#first div{
+    margin-bottom: 20px;
+}
+
+#second div{
+    margin-bottom: 20px; 
+}

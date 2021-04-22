@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./assets/style.css">
+        <title>Projeto Mod03 - MATH()</title>
+    </head>
+    <body>
+        <section id="first">
+            <p>1° Section ⇒ Retorno de um número fracionado em inteiro mais próximo (Dica: Math.round(x));</p>
+
+            <div>
+                <label for="number">Número:</label>
+                <input type="number" id="number" placeholder="Ex: 41.55">
+                <input type="button" value="Calcular">
+            </div>
+        </section>
+
+        <section id="second">
+            <p>2° Section ⇒ Potência do Número do primeiro Input pelo do segundo Input (Dica: Math.pow(x, y));</p>
+
+            <div>
+                <label for="base">Número 1: <input id="base" type="number"placeholder="Número da base"> </label>
+                
+                <label for="expoente">Número 2: <input id="expoente" type="number" placeholder="Número do expoente"> </label>
+
+                <input type="button" value="Calcular" onclick="calcularPotencia()">
+
+            </div>
+        </section>
+
+        <section id="third">
+            <p>3° Section ⇒ Cálculos referentes a medida de um Circulo:</p>
+            <ul>
+                <li>Medida da Circunferência de um Circulo (C = 2 * π * raio),</li>
+                <li>Resultado do Cálculo da Área (A = π * r²);</li>
+            </ul>
+        </section>
+
+        <section id="fourth">
+            <p>4° Section ⇒ Calculos referentes a medida de um Cubo:</p>
+            <ul>
+                <li>Área da Base (Ab = a²);</li>
+                <li>Área total (At = Ab * 6);</li>
+                <li>Volume do Cubo (Vt = a³);
+                </li>
+            </ul>
+        </section>
+
+        <section id="fifth">
+            <p>5° Section ⇒ Por sua conta, é isso mesmo, utilize o objeto Math para fazer algo sobre Matemática que você ache bacana
+            </p>
+        </section>
+
+        <script src="./assets/app.js"></script>
+    </body>
+</html>
