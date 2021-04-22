@@ -1,4 +1,10 @@
-
+// Função da 1ª section
+function mostrarParteInteira(){
+    let numFracionado = document.getElementById('fracionado').value
+    let numInteiro = Math.round(numFracionado)
+    alert(numInteiro)
+    document.getElementById('fracionado').value = ""
+}
 
 
 // Função da 2ª section
