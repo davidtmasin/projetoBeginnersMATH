@@ -20,12 +20,30 @@ function calcularPotencia(){
     document.getElementById('expoente').value = ""
 }
 
-// Função da 3º section
-function calcCirculo(){
+// Funções da 3º section
+function compCircunferencia(){
     const pi = Math.PI
     let raioCircunf = document.getElementById('raioCircunf').value
     let calcCircunf = (2 * pi * raioCircunf).toFixed(2)
 
     alert("A fórmula C = 2 * π * raio resulta em " + calcCircunf + ".")
     document.getElementById('raioCircunf').value = ""
+   
+}
+
+function areaCircunferencia() {
+    let raioDoCirculo = document.getElementById('raioCircunferencia').value
+    let areaDoCirculo = (Math.PI * Math.pow(raioDoCirculo, 2)).toFixed(2)
+
+    alert("A fórmula A =  π * r² resulta em " + areaDoCirculo)
+    document.getElementById('raioCircunferencia').value = ""
+}
+
+
+// Função da 4ª section
+function areaBaseCubo(){
+    let arestaCubo = document.getElementById('arestaCubo').value
+    let areaDaBase = (Math.pow(arestaCubo, 2)).toFixed(2)
+
+    alert("A área da base vale " + areaDaBase + ".")
 }
