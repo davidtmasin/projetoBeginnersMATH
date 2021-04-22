@@ -7,66 +7,73 @@
         <title>Projeto Mod03 - MATH()</title>
     </head>
     <body>
-        <section id="first">
-            <p>1° Section ⇒ Retorno de um número fracionado em inteiro mais próximo (Dica: Math.round(x));</p>
-
-            <div>
-                <label for="fracionado">Número:</label>
-                <input type="number" id="fracionado" placeholder="Ex: 41.55" name="numFracionado">
-                <input type="button" value="Calcular" onclick="mostrarParteInteira()">
-            </div>
-        </section>
-
-        <section id="second">
-            <p>2° Section ⇒ Potência do Número do primeiro Input pelo do segundo Input (Dica: Math.pow(x, y));</p>
-
-            <div>
-                <label for="base">Número 1: <input id="base" type="number"placeholder="Número da base" name="numBase"> </label>
-                
-                <label for="expoente">Número 2: <input id="expoente" type="number" placeholder="Número do expoente" name="numExpoente"> </label>
-
-                <input type="button" value="Calcular" onclick="calcularPotencia()">
-
-            </div>
-        </section>
-
-        <section id="third">
-            <p>3° Section ⇒ Cálculos referentes a medida de um Circulo:</p>
-            <ul>
-                <li>Medida da Circunferência de um Circulo (C = 2 * π * raio),</li>
-                <li>Resultado do Cálculo da Área (A = π * r²);</li>
-            </ul>
-
-            <div>
-                <label for="raioCircunf">Raio:<input id="raioCircunf" type="number" name="numRaioCircunferencia" placeholder="Informe o valor do raio"></label>
-                <input type="button" value="Calcular Circunferência" onclick="compCircunferencia()">
-            </div>
-            <div>
-                <label for="areaCircunf">Raio:<input id="raioCircunferencia" type="number" name="numRaioCircunf" placeholder="Informe o valor do raio"></label>
-                <input type="button" value="Calcular Área da Circunferência" onclick="areaCircunferencia()">
-            </div>
-
-        </section>
-
-        <section id="fourth">
-            <p>4° Section ⇒ Calculos referentes a medida de um Cubo:</p>
-            <ul>
-                <li>Área da Base (Ab = a²);</li>
-                <li>Área total (At = Ab * 6);</li>
-                <li>Volume do Cubo (Vt = a³);
-                </li>
-            </ul>
-            <div>
-                <label for="arestaCubo">Raio:<input id="arestaCubo" type="number" name="numArestaCubo" placeholder="Informe o valor da aresta"></label>
-                <input type="button" value="Calcular Área do Cubo" onclick="areaBaseCubo()">
-            </div>
-        </section>
-
-        <section id="fifth">
-            <p>5° Section ⇒ Por sua conta, é isso mesmo, utilize o objeto Math para fazer algo sobre Matemática que você ache bacana
-            </p>
-        </section>
-
+        <h1 id="titulo">Formulário Matemático</h1>
+        <form id="formularioMatematico">
+            <section id="first">
+                <p>1° Section ⇒ Retorno de um número fracionado em inteiro mais próximo (Dica: Math.round(x));</p>
+    
+                <div>
+                    <label for="fracionado">Número:</label>
+                    <input type="number" id="fracionado" placeholder="Ex: 41.55" name="numFracionado">
+                    <input type="button" value="Calcular" onclick="mostrarParteInteira()">
+                </div>
+            </section>
+    
+            <section id="second">
+                <p>2° Section ⇒ Potência do Número do primeiro Input pelo do segundo Input (Dica: Math.pow(x, y));</p>
+    
+                <div>
+                    <label for="base">Número 1: <input id="base" type="number"placeholder="Número da base" name="numBase"> </label>
+                    
+                    <label for="expoente">Número 2: <input id="expoente" type="number" placeholder="Número do expoente" name="numExpoente"> </label>
+    
+                    <input type="button" value="Calcular" onclick="calcularPotencia()">
+    
+                </div>
+            </section>
+    
+            <section id="third">
+                <p>3° Section ⇒ Cálculos referentes a medida de um Circulo:</p>
+                <ul>
+                    <li>Medida da Circunferência de um Circulo (C = 2 * π * raio),</li>
+                    <li>Resultado do Cálculo da Área (A = π * r²);</li>
+                </ul>
+    
+                <div>
+                    <label for="raioCircunf">Raio: <input id="raioCircunf" type="number" name="numRaioCircunferencia" placeholder="Informe o valor do raio"></label>
+                    <input type="button" value="Calcular Circunferência" onclick="compCircunferencia()">
+                </div>
+                <div>
+                    <label for="areaCircunf">Raio: <input id="raioCircunferencia" type="number" name="numRaioCircunf" placeholder="Informe o valor do raio"></label>
+                    <input type="button" value="Calcular Área da Circunferência" onclick="areaCircunferencia()">
+                </div>
+    
+            </section>
+    
+            <section id="fourth">
+                <p>4° Section ⇒ Calculos referentes a medida de um Cubo:</p>
+                <ul>
+                    <li>Área da Base (Ab = a²);</li>
+                    <li>Área total (At = Ab * 6);</li>
+                    <li>Volume do Cubo (Vt = a³);
+                    </li>
+                </ul>
+                <div>
+                    <label for="arestaCubo">Aresta: <input id="arestaCubo" type="number" name="numArestaCubo" placeholder="Informe o valor da aresta"></label>
+                    <input type="button" value="Calcular Área do Cubo" onclick="areaBaseCubo()">
+                </div>
+            </section>
+    
+            <section id="fifth">
+                <p>5° Section ⇒ Por sua conta, é isso mesmo, utilize o objeto Math para fazer algo sobre Matemática que você ache bacana.
+                </p>
+                <div>
+                    <p>Raiz Quadrada</p>
+                    <label for="raizQd">Número: <input type="number" id="raizQd" name="num_raiz_quadrada" placeholder="Só números positivos"></label>
+                    <input type="button" value="Calcular Raiz Quadrada" onclick="raizQuadrada()">
+                </div>
+            </section>
+        </form>
         <script src="./assets/app.js"></script>
     </body>
 </html>
