@@ -12,7 +12,7 @@
 
             <div>
                 <label for="fracionado">Número:</label>
-                <input type="number" id="fracionado" placeholder="Ex: 41.55">
+                <input type="number" id="fracionado" placeholder="Ex: 41.55" name="numFracionado">
                 <input type="button" value="Calcular" onclick="mostrarParteInteira()">
             </div>
         </section>
@@ -21,9 +21,9 @@
             <p>2° Section ⇒ Potência do Número do primeiro Input pelo do segundo Input (Dica: Math.pow(x, y));</p>
 
             <div>
-                <label for="base">Número 1: <input id="base" type="number"placeholder="Número da base"> </label>
+                <label for="base">Número 1: <input id="base" type="number"placeholder="Número da base" name="numBase"> </label>
                 
-                <label for="expoente">Número 2: <input id="expoente" type="number" placeholder="Número do expoente"> </label>
+                <label for="expoente">Número 2: <input id="expoente" type="number" placeholder="Número do expoente" name="numExpoente"> </label>
 
                 <input type="button" value="Calcular" onclick="calcularPotencia()">
 
@@ -36,6 +36,16 @@
                 <li>Medida da Circunferência de um Circulo (C = 2 * π * raio),</li>
                 <li>Resultado do Cálculo da Área (A = π * r²);</li>
             </ul>
+
+            <div>
+                <label for="raioCircunf">Raio:<input id="raioCircunf" type="number" name="numRaioCircunferencia" placeholder="Informe o valor do raio"></label>
+                <input type="button" value="Calcular Circunferência" onclick="calcCirculo()">
+            </div>
+            <div>
+                <label for="areaCircunf">Raio:<input id="areaCircunf" type="number" name="numAreaCircunferencia" placeholder="Informe o valor do raio"></label>
+                <input type="button" value="Calcular Área da Circunferência">
+            </div>
+
         </section>
 
         <section id="fourth">
